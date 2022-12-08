@@ -1,0 +1,56 @@
+#gallery{
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:"title title title title"
+                        "h2 h2 h2 h2"
+                        "img1 img2 img3 img4"
+                        "img5 img6 img3 img7";
+    grid-gap: 10px;
+}
+
+#title{
+    grid-area: title;
+}
+#h2{
+    grid-area: h2;
+}
+
+.imgs{
+    background-image: url(../images/istockphoto-1308246727-170667a.jpg);
+    background-position: center;
+    height: 200px;
+    background-repeat: repeat-y;
+    align-items: center;justify-content: center;
+    
+}
+#img1{
+    grid-area: img1;
+    
+}
+#img2{
+    grid-area: img2;
+    
+    
+}
+#img3{
+    grid-area: img3;
+    height: 410px;
+}
+#img4{
+    grid-area: img4;
+    
+}
+#img5{
+    grid-area: img5;
+    
+}
+#img6{
+    grid-area: img6;
+    
+}
+#img7{
+    grid-area: img7;
+    
+}
+

@@ -1,0 +1,48 @@
+*{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+title{
+    font-size: 1.5em;
+    margin-top: 4vh;
+    text-transform: uppercase;
+    text-decoration: underline;
+    
+}
+
+h1{
+    font-weight: bold;
+    margin:4vh;
+}
+#buttons{
+    flex-direction: row;
+    margin-top: 2vh;
+}
+
+input{
+    margin: 2vw;
+    padding: 1vh 2vw;
+    font-weight: bold;
+    border: none;
+    background-color: lightgray;
+    box-shadow: 1px 0px 3px 1px;
+}
+
+body{
+    height: 100vh;
+    
+}
+
+@media only screen and (max-width : 720px) {
+    h1{
+        display: none;
+    }
+    body{background-color: red;}
+    
+}

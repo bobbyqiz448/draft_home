@@ -1,0 +1,24 @@
+*{
+    margin: 10px;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    font-size: 1em;
+}
+
+title{
+    font-weight: bolder;
+    font-size: 1.2em;
+    margin-bottom: 0px;
+    
+}
+
+form{background-color: gray;}
+
+#form-submit{
+    background-color: rgb(20, 221, 20);
+}
+
+script{visibility: hidden;}

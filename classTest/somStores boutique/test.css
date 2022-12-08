@@ -1,0 +1,130 @@
+*{
+    background-color: lightgray;
+    color: rgba(40, 65, 212, 0.877);
+    font-size: 1.1em;
+    background:transparent;
+    font-weight: bold;
+    outline: none;
+    
+}
+body{max-width: 90vw;}
+.pages{
+    height: 100vh;
+    width: 98vw;
+    
+}
+#page1{
+    background-image: url(./images/big-box-store-display-of-clothing-for-sale-DF37R2.jpg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+#top{
+
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    padding-right: 80px;
+    width: auto;
+    background-color: black;
+    color: white;
+    padding-right:25px;
+}
+
+#logo{
+    border: 2px solid white;
+    padding:8px;
+    
+}
+
+#nav_bar{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;  
+    
+    
+}
+#nav_bar > ul{
+    display: flex;
+    justify-self: flex-end;
+}
+#nav_bar > ul > li{
+    flex-direction: row;
+    list-style: none;
+    outline: none;
+    border-left: 2px solid white;
+    padding:8px;
+    border-left: 2px solid whitesmoke;
+}
+
+#search{
+    color: white;
+    height: 28px;
+    width: 150px;
+    display: flex;
+    align-self: center;
+    margin-left: 12px;
+}
+#search_input{
+    background-color: lightgray;
+    width: 80px;
+    font-size: medium;
+    font-weight: normal;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    padding:5px;
+    font-size: .5em;
+
+}
+#search_button{
+    font-size: .5em;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    padding:2px;
+    font-weight: normal;
+    margin-right: auto;
+}
+
+
+#toggle-btn{
+    width: 50px;
+    background-image: url("bobs.png");
+    background-repeat: no-repeat;
+    padding: 8px;
+    height: 50px;
+    padding: 5px;
+    background-position: cover;
+    padding: 5px;
+    
+}
+
+#toggle-btn :hover{
+    cursor: zoom-in;
+}
+
+#sl_images{
+    display: flex;
+    flex-direction: column;
+    justify-items: right;
+    width: 60vw;
+    margin-left: 20vw;
+    position: absolute;
+    left: 50%;
+    
+}
+#images{
+    justify-self: center;
+    align-self: center;
+    
+}
+#images{
+    justify-self: center;
+    align-self: center;
+    
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="davidshimjs-qrcodejs-04f46c6/jquery.min.js"></script>
+    <script src="davidshimjs-qrcodejs-04f46c6/qrcode.js" ></script>
+</head>
+<body>
+    <!--This is the navigation bar-->
+    <nav id="main-nav">
+        <div id="toggle-btn" > </div>
+        <div id="nav-links">
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">portfolio</a></li>
+                <li><a href="">about us</a></li>
+                <li><a href="">gallery</a></li>
+                <li><a href="">contact</a></li>
+            <div id="resize"> <li ><a href="">resize</a></li></div>
+            </ul>
+        </div>
+           
+        <div id="nav-search">
+                <input id="search-input" type="search" placeholder="Type to search"><input id="search-btn" type="submit" value="search">
+        </div>
+    
+    </nav>
+    <!--This is the side navigation-->
+    <aside id="side-nav">
+        <ul>
+            <li><span>core services</span></li>
+            <li><a href="">making websites</a></li>
+            <li><a href="">making videos</a></li>
+            <li><a href="">seo optimization</a></li>
+            <li><a href="">education</a></li>
+            <li><a href="">comic contents</a></li>
+        </ul>
+    </aside>
+    <!--This is the main content-->
+    <main id="main-section">
+        <div id="main-banner">
+            Welcome to b-raf solutions limited.<br> Your ultimate tech solutions provider
+         </div>
+            <div id="login-card">        
+                    <div id="login-title">
+                        login
+                        
+                    </div>
+                    <div id="login-form">
+                        <form>
+                            <input type="email" placeholder="Enter your email">
+                            <input type="password" placeholder="Enter your password">
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                    <hr width="100%">
+                    <div id="signup-link"><a href="#">Sign Up</a> instead? </div>
+                    
+                    
+                    
+            </div>
+
+            <div id="signup-card">        
+                <div id="signup-title">
+                    sign up
+                    
+                </div>
+                <div id="signup-form">
+                    <form>
+                        <input type="text" placeholder="Enter your name">
+                        <input type="email" placeholder="Enter your email">
+                        <input id="password" type="password" placeholder="Enter your password">
+                        <input id="repassword" type="password" placeholder="Re-enter password">
+                        <input id="signup-submitbtn" type="submit" value="Submit">
+                    </form>
+                </div>
+                <hr width="100%">
+                <div id="login-link"><a href="#">Log in</a> instead? </div>
+                
+                
+        </div>
+
+    </main>
+    <footer id="footer-section" >
+        <div id="age" style="display: flex;flex-direction: column;align-content: center;justify-items: center;"><span id="age-viewer" style="justify-self: center;align-self: center;margin:20px;">>>Your age will be displayed here<<</span>
+            <input type="date" value="1978-01-01" id="age-input" placeholder="Enter year of birth here!" style ="color: black;background-color: white;font-size: medium;margin-left:320px;margin-right: 320px;">
+        </div>
+    </footer>
+    <input id="text" type="text" value="http://codeNinja_254.com/bob" style="width:80%; visibility: hidden;align-self: center;justify-self:center;" /><br />
+</body>
+<script>
+    function calculate(){
+        let dob = document.getElementById("age-input").value;
+        let today = new Date();
+        let age = 0;
+        let viewer = document.getElementById("age-viewer");
+
+        
+
+        if(Object(dob).split("-")[1] > today.getMonth()) {
+                
+                age = today.getFullYear() - Object(dob).split("-")[0] ;
+                age--;
+
+        } else {
+            age = today.getFullYear() - Object(dob).split("-")[0] ;
+        }
+
+        viewer.innerText = `Your age is ${age}, change D.O.B in the input to get your age!`;
+        console.log(`${age}`);
+    }
+
+
+
+
+
+    let a = $("#age-input").
+                on("blur",  ()=> {
+                    calculate();
+                }).
+                on("keydown", (e)=> {
+                    if (e.keyCode == 13) {
+                        calculate();
+                    }
+                });
+    
+
+    let b = $(window).
+            on("ready",()=>{
+                calculate();
+            }
+            );
+        console.log(window.localStorage);
+
+        let name = ["Bob","Mike","Otieno","Jakasaye"];
+        let cap = name.length-1;
+        let name2 = [cap];
+        for (let i = 0; i < name.length; i++) {            
+            name2[i] = name[cap];
+            cap--;
+            
+        }
+        name = name2;
+        console.log(name);
+        name2 = name.join(",");//.replaceAll(",",""); 
+        console.log(name2);
+        //console.log(name2.split(","));
+        let namey = "David";let l = [];
+        let k = name2.concat(`,${namey}`);
+        console.log(k);
+        l = k;
+        name = l.split(",")
+        console.log(name);
+
+        //arguements being passed by value and by reference: to be confirmed
+
+        function getValue(member,year){
+            member.name = "Mike";
+            year  = "2021";
+        }
+
+
+        const person = {"name":"Bob"};
+        const birthday = "2014";
+
+        getValue(person,birthday);
+        console.log(`The value of person is ${person.name} and the value of birthday is ${birthday}`);
+
+        let tarehe = new Date();
+        console.log(tarehe.toLocaleTimeString());
+
+            
+</script>
+<!--<script src="main.js"></script>-->
+</html>
